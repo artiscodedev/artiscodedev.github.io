@@ -1,0 +1,68 @@
+//:: colors
+$white: #ffffff !default;
+$green: #86bc25 !default;
+$black: #000000 !default;
+
+
+$lnk-gray-1: #808285 !default;
+$lnk-gray-2: #787878 !default;
+$lnk-gray-3: #6a6a71 !default;
+$lnk-gray-4: #404142 !default;
+$lnk-gray-5: #414042 !default;
+$lnk-gray-6: #231f20 !default;
+
+$lnk-gray-7: rgba(0, 0, 0, 0.75) !default;
+$lnk-gray-8: rgba(0, 0, 0, 0.25) !default;
+$lnk-gray-9: rgba(0, 0, 0, 0.85) !default;
+
+
+
+$lnk-gray: () !default;
+$lnk-gray: map-merge((
+  "1": $lnk-gray-1,
+  "2":  $lnk-gray-2,
+  "3":  $lnk-gray-3,
+  "4":  $lnk-gray-4,
+  "5":  $lnk-gray-5,
+  "6":  $lnk-gray-6,
+  "7":  $lnk-gray-7,
+  "8":  $lnk-gray-8
+
+), $lnk-gray);
+
+
+$lnk-bg-1: #FAFAFA;
+$lnk-bg-2: #e2e2e2;
+$lnk-bg-3: #e6e7e8;
+$lnk-bg-4: #dddddd;
+$lnk-bg-5: #e5e5e5;
+$lnk-bg-6: #f4f6f9;
+$lnk-bg-7: #d1d3d4;
+$lnk-bg-8: #b9b9b9;
+$lnk-bg-9: #231f20;
+$lnk-bg-10: #f2f2f2;
+
+
+
+//:: font
+
+$font-family-sans-serif: 'Open Sans', sans-serif !default;
+$font-family-base: $font-family-sans-serif !default;
+
+$font-family-sans-banner-serif: 'Open Sans Condensed', sans-serif !default;
+$font-family-banner: $font-family-sans-banner-serif !default;
+
+$font-size-base: 17px !default; // Assumes the browser default, typically `17px`
+$font-size-lg: ($font-size-base * 1.25) !default;
+$font-size-sm: ($font-size-base * .875) !default;
+
+$container-max-widths-sm: 540px !default;
+$container-max-widths-md: 720px !default;
+$container-max-widths-lg: 960px !default;
+$container-max-widths-xl: 1140px !default;
+
+$grid-breakpoints-xs: 0 !default;
+$grid-breakpoints-sm: 576px !default;
+$grid-breakpoints-md: 768px !default;
+$grid-breakpoints-lg: 992px !default;
+$grid-breakpoints-xl: 1200px !default;

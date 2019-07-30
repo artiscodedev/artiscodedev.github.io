@@ -1,0 +1,16 @@
+body {
+    font-family: $font-family-base;
+    font-weight: 400;
+    font-style: normal;
+    font-size: $font-size-base;
+    line-height: 1.8rem;
+    color: $lnk-gray-5;
+    background: $black;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid $lnk-bg-3;
+}

@@ -1,0 +1,19 @@
+{
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.fullReload": true,
+    "liveServer.settings.root": "/src",
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/src/assets/css/dist"
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/src/assets/css/dist"
+        },
+    ],
+    "liveServer.settings.port": 5502,
+    "minify.minifyExistingOnSave": true,
+}

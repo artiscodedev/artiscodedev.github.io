@@ -1,0 +1,11 @@
+{
+    "name": "akwebpage",
+    "version": "1.0.0",
+    "description": "lorem",
+    "main": "main.js",
+    "author": {
+        "name": "ArtisCode",
+        "email": "artiscodedev@gmail.com"
+    },
+    "license": "AC"
+}
