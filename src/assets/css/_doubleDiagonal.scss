@@ -1,0 +1,360 @@
+/* Dark Body */
+
+
+
+body.dark .about,
+body.dark .services,
+body.datk .testimonials,
+body.dark .portfolio,
+body.dark .team,
+body.dark .blog,
+body.dark .contact,
+body.dark .preloader,
+body.dark .logos {
+  background-color: #242424;
+}
+
+
+body.dark .conocenos {
+  background-color: #ffffff;
+}
+
+body.dark .services-box-item-cover,
+body.dark .services-box-item-content {
+  background: #151515;
+  box-shadow: none;
+}
+
+body.dark .about .about-content .about-right-side img {
+  border: 0;
+}
+
+body.dark hr {
+  border-top: 1px solid #343434;
+  background-color: transparent;
+}
+
+
+
+body.dark.big-triangle .projectmanager:after,
+body.dark.big-triangle .projectmanager:before,
+body.dark.big-triangle .mainslider:after,
+body.dark.big-triangle .mainslider:before,
+// body.dark.big-triangle .testimonials:after,
+// body.dark.big-triangle .testimonials:before,
+body.dark.big-triangle .newsletter:after,
+body.dark.big-triangle .newsletter:before,
+body.dark.big-triangle .facts:after,
+body.dark.big-triangle .facts:before,
+body.dark.big-triangle .videopromotion:after,
+body.dark.big-triangle .videopromotion:before,
+body.dark.big-triangle .contactform:after,
+body.dark.big-triangle .contactform:before,
+body.dark.big-triangle .banner:after,
+body.dark.big-triangle .banner:before {
+  border-bottom: 100px solid #242424;
+}
+
+body.dark.big-triangle .projectmanager:after,
+body.dark.big-triangle .projectmanager:before,
+// body.dark.big-triangle .testimonials:after,
+// body.dark.big-triangle .testimonials:before,
+body.dark.big-triangle .newsletter:after,
+body.dark.big-triangle .newsletter:before,
+body.dark.big-triangle .facts:after,
+body.dark.big-triangle .facts:before,
+body.dark.big-triangle .call-to-action:after,
+body.dark.big-triangle .call-to-action:before,
+body.dark.big-triangle .videopromotion:after,
+body.dark.big-triangle .videopromotion:before,
+body.dark.big-triangle .contactform:after,
+body.dark.big-triangle .contactform:before {
+  border-top: 100px solid #242424;
+}
+
+body.dark.big-triangle .footer:after,
+body.dark.big-triangle .footer:before {
+  border-top: 100px solid #242424;
+}
+
+body.dark.big-triangle .contactform:after,
+body.dark.big-triangle .contactform:before {
+  border-bottom: 100px solid #242424;
+}
+
+body.dark .divider .outer-line {
+  border-bottom: 1px solid #888;
+}
+
+body.dark .footer {
+  background: #111;
+}
+
+
+body.double-diagonal .services,
+body.double-diagonal .conocenos,
+body.double-diagonal .testimonials,
+body.double-diagonal .pricing,
+body.double-diagonal .team,
+body.double-diagonal .blog,
+body.double-diagonal .contact {
+  padding-bottom: 50px;
+}
+
+body.double-diagonal.pricing-page .pricing {
+  padding-bottom: 30px;
+}
+
+body.double-diagonal.about-page .call-to-action {
+  margin-top: -55px;
+}
+
+// body.double-diagonal .testimonials,
+body.double-diagonal .newsletter,
+body.double-diagonal .facts {
+  margin-top: -50px;
+}
+
+body.double-diagonal .contact {
+  margin-bottom: -50px;
+}
+
+body.double-diagonal .projectmanager,
+// body.double-diagonal .testimonials,
+body.double-diagonal .facts,
+body.double-diagonal .call-to-action,
+body.double-diagonal .videopromotion,
+body.double-diagonal .newsletter,
+body.double-diagonal .contactform {
+  -webkit-transform: skewY(-3deg);
+  transform: skewY(-3deg);
+}
+
+body.double-diagonal .about .container {
+  padding: 50px 15px 150px !important;
+}
+body.double-diagonal .pricing .container {
+  padding: 50px 15px 135px !important;
+}
+body.double-diagonal .team .container {
+  padding: 50px 15px 150px !important;
+}
+body.double-diagonal .portfolio .container,
+body.double-diagonal .blog .container {
+  padding: 50px 15px 110px !important;
+}
+
+body.double-diagonal.pricing-page .pricing .container {
+  padding: 30px 15px 60px !important;
+}
+
+body.double-diagonal .faq .container,
+body.double-diagonal .terms .container {
+  padding: 90px 15px 70px !important;
+}
+
+body.double-diagonal .shop-cart .container,
+body.double-diagonal .shop-checkout .container {
+  padding: 90px 15px !important;
+}
+
+body.double-diagonal .project .container {
+  padding: 90px 15px 60px !important;
+}
+
+body.double-diagonal .services .container {
+  padding: 50px 15px 110px !important;
+}
+
+body.double-diagonal .conocenos .container {
+  padding: 50px 15px 110px !important;
+}
+
+body.double-diagonal .portfolio .container {
+  padding: 50px 0 135px !important;
+}
+
+body.double-diagonal.portfolio-page .portfolio .container {
+  padding: 50px 15px 70px !important;
+}
+
+body.double-diagonal .blog .container {
+  padding: 50px 15px 70px !important;
+}
+
+body.double-diagonal.blog-page .blog .container {
+  padding: 90px 15px 60px !important;
+}
+
+body.double-diagonal.blog-page.blog-post .blog .container {
+  padding: 90px 15px 20px !important;
+}
+
+body.double-diagonal.blog-page .blog {
+  padding-bottom: 0;
+}
+
+body.double-diagonal .testimonials .section-overlay {
+  padding: 110px 0 180px;
+}
+
+body.double-diagonal .newsletter .section-overlay,
+body.double-diagonal .call-to-action .section-overlay {
+  padding: 110px 0 180px;
+}
+
+body.double-diagonal .facts .section-overlay {
+  padding: 110px 0 180px;
+}
+
+body.double-diagonal .projectmanager .section-overlay {
+  padding: 110px 0 180px;
+}
+
+body.double-diagonal section {
+  position: relative;
+  z-index: 1;
+}
+
+body.double-diagonal .logos {
+  padding: 1px 0;
+}
+
+body.double-diagonal section::before,
+body.double-diagonal section::after {
+  position: absolute;
+  content: "";
+  pointer-events: none;
+}
+
+body.double-diagonal .about::before,
+body.double-diagonal .about::after,
+body.double-diagonal .faq::before,
+body.double-diagonal .faq::after,
+body.double-diagonal .terms::before,
+body.double-diagonal .terms::after,
+body.double-diagonal .shop-cart::before,
+body.double-diagonal .shop-cart::after,
+body.double-diagonal .shop-checkout::before,
+body.double-diagonal .shop-checkout::after,
+body.double-diagonal .project::before,
+body.double-diagonal .project::after,
+body.double-diagonal .services::before,
+body.double-diagonal .services::after,
+body.double-diagonal .services::before,
+body.double-diagonal .services::after,
+body.double-diagonal .pricing::before,
+body.double-diagonal .pricing::after,
+body.double-diagonal .portfolio::before,
+body.double-diagonal .portfolio::after,
+body.double-diagonal .team::before,
+body.double-diagonal .team::after,
+body.double-diagonal .blog::before,
+body.double-diagonal .blog::after,
+body.double-diagonal .contact::before,
+body.double-diagonal .contact::after,
+body.double-diagonal .logos::before,
+body.double-diagonal .logos::after,
+body.double-diagonal .conocenos::before,
+body.double-diagonal .conocenos::after,
+body.double-diagonal .conocenos::before,
+body.double-diagonal .conocenos::after {
+  top: 0;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+body.double-diagonal .about::before,
+body.double-diagonal .faq::before,
+body.double-diagonal .terms::before,
+body.double-diagonal .shop-cart::before,
+body.double-diagonal .shop-checkout::before,
+body.double-diagonal .project::before,
+body.double-diagonal .services::before,
+body.double-diagonal .conocenos::before,
+body.double-diagonal .pricing::before,
+body.double-diagonal .portfolio::before,
+body.double-diagonal .team::before,
+body.double-diagonal .blog::before,
+body.double-diagonal .contact::before,
+body.double-diagonal .logos::before {
+  height: 50%;
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  -webkit-transform-origin: 3% 0;
+  transform-origin: 3% 0;
+}
+body.double-diagonal .about.safari::before {
+  height: 33px;
+  background-color: transparent !important;
+}
+body.double-diagonal .projectmanager .container,
+body.double-diagonal .testimonials .container,
+body.double-diagonal .facts .container,
+body.double-diagonal .call-to-action .container,
+body.double-diagonal .videopromotion .container,
+body.double-diagonal .newsletter .container,
+body.double-diagonal .contactform .container {
+  -webkit-transform: skewY(3deg);
+  transform: skewY(3deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+body.double-diagonal .videopromotion .section-overlay {
+  padding: 120px 0 180px;
+}
+
+body.double-diagonal .contactform .section-overlay {
+  padding: 120px 0;
+}
+
+body.double-diagonal .bx-wrapper {
+  margin: 50px 0;
+}
+
+body.double-diagonal .contactform {
+  margin-top: -100px;
+}
+
+body.double-diagonal .info-map-boxes {
+  margin-top: -186px;
+  padding-bottom: 80px;
+}
+
+body.double-diagonal .footer {
+  -webkit-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+  margin-top: 30px;
+  margin-bottom: -50px;
+  padding-bottom: 50px;
+  border: none;
+}
+
+body.double-diagonal .footer .container {
+  -webkit-transform: skewY(2deg);
+  transform: skewY(2deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding: 70px 0;
+}
+
+body.double-diagonal .contact .container:first-child {
+  padding: 50px 15px 30px !important;
+}
+
+
+body.double-diagonal .services::before,
+body.double-diagonal .conocenos::before,
+body.double-diagonal .team::before,
+body.double-diagonal .contactform::before,
+body.double-diagonal .logos::before  {
+  background: $orange;
+}

@@ -1,0 +1,86 @@
+.social-icons {
+  ul {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    font-size: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 15px 15px 0;
+      padding: 0;
+      vertical-align: top;
+      list-style: none;
+
+      a {
+        background: transparent;
+        display: block;
+        width: 63px;
+        height: 63px;
+        line-height: 59px;
+        border-radius: 50%;
+        -webkit-transition: 0.8s;
+        transition: 0.8s;
+        text-align: center;
+        text-decoration: none;
+        color: $orange !important;
+        border: 2px solid $orange;
+
+        &:hover {
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+          color: $white !important;
+          background-color: $orange;
+          &:before {
+            transform: rotateY(360deg);
+            -webkit-transform: rotateY(360deg);
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+            color: $white !important;
+          }
+        }
+
+        &:before {
+          display: block;
+          -webkit-transition: 0.8s;
+          transition: 0.8s;
+          font-family: FontAwesome;
+          font-size: 30px;
+          text-align: center;
+        }
+      }
+
+      a[title="facebook"]:before {
+        content: "\f09a";
+      }
+
+      a[title="twitter"]:before {
+        content: "\f099";
+      }
+
+      a[title="google"]:before {
+        content: "\f0d5";
+      }
+
+      a[title="skype"]:before {
+        content: "\f17e";
+      }
+
+      a[title="instagram"]:before {
+        content: "\f16d";
+      }
+
+      a[title="linkedin"]:before {
+        content: "\f0e1";
+      }
+
+      a[title="instagram"]:before {
+        content: "\f16d";
+      }
+
+      a[title="youtube"]:before {
+        content: "\f167";
+      }
+    }
+  }
+}

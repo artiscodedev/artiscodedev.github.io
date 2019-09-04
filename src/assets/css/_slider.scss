@@ -1,0 +1,44 @@
+.tp-simpleresponsive .slider-button {
+  color: #fff;
+  // border-radius: 40px;
+  padding: 12px 26px;
+  font-size: 15px;
+  font-weight: 600;
+}
+// .tp-simpleresponsive .slider-button:before {
+//     // content: "\f063";
+// }
+.dark-slider .rev_slider .slotholder:after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 1111;
+  background: $color-21;
+}
+.scroll-effects-text {
+  color: #eee !important;
+}
+.nowrap-normal {
+  white-space: normal !important;
+}
+.px-15 {
+  padding: 0 15px !important;
+}
+.tp-parallax-wrap,
+.tp-loop-wrap {
+  width: 100%;
+}
+
+.tp-caption.NotGeneric-Title,
+.NotGeneric-Title {
+  font-family: $font-family-base-monserrat !important;
+}
+
+.tp-caption.NotGeneric-SubTitle,
+.NotGeneric-SubTitle {
+  font-family: $font-family-base !important;
+}

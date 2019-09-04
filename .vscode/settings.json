@@ -1,7 +1,6 @@
 {
     "liveServer.settings.CustomBrowser": "chrome",
     "liveServer.settings.fullReload": true,
-    "liveServer.settings.root": "/src",
     "liveSassCompile.settings.formats": [
         {
             "format": "expanded",

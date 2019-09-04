@@ -1,16 +1,21 @@
 body {
-    font-family: $font-family-base;
-    font-weight: 400;
-    font-style: normal;
-    font-size: $font-size-base;
-    line-height: 1.8rem;
-    color: $lnk-gray-5;
-    background: $black;
+  font-family: $font-family-base;
+  font-weight: 400;
+  font-style: normal;
+  font-size: $font-size-base;
+  line-height: 1.8rem;
+  color: $color-text-2;
+  background: $white;
 }
 
 hr {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border: 0;
-    border-top: 1px solid $lnk-bg-3;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid $color-bg-4;
+}
+
+body.dark .wrapper {
+  background-color: $color-bg-1;
+  overflow: hidden;
 }

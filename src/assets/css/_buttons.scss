@@ -1,0 +1,95 @@
+#ak {
+  #back-top-wrapper {
+    position: fixed;
+    right: 26px;
+    bottom: 26px;
+    overflow: hidden;
+    z-index: 1111;
+
+    #back-top {
+      display: none;
+
+      a {
+        display: block;
+        background-color: transparent;
+        text-align: center;
+        text-decoration: none;
+        -webkit-transition: 1s;
+        transition: 1s;
+        width: 45px;
+        margin: 0 auto;
+        border-radius: 50%;
+        color: $orange;
+        border: 2px solid $orange;
+        &:hover {
+          background: $orange;
+          span {
+            background: none;
+            &::before {
+              top: -50px;
+            }
+            &::after {
+              top: 0;
+            }
+          }
+        }
+
+        span {
+          display: block;
+          -webkit-transition: 1s;
+          transition: 1s;
+          z-index: 1;
+          margin-bottom: 0;
+          width: 41px;
+          height: 41px;
+          background: none;
+          position: relative;
+          overflow: hidden;
+          &::before {
+            top: 0;
+          }
+          &::after {
+            top: 50px;
+            color: #fff;
+          }
+          &::before,
+          &::after {
+            content: "\f062";
+            font-size: 19px;
+            font-family: FontAwesome;
+            line-height: 41px;
+            position: absolute;
+            left: 0;
+            width: 41px;
+            text-align: center;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+
+  .custom-button {
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    background: $orange;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    position: relative;
+    letter-spacing: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: 10px;
+    text-transform: uppercase;
+    padding: 12px 33px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,398 @@
+#ak {
+  .facts {
+    background: url(../../img/hme_numeralia.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 120%;
+    .section-overlay {
+      background-color: $color-21;
+      padding: 110px 0 180px;
+    }
+    h4 {
+      font-weight: normal;
+      font-family: $font-family-base;
+    }
+    .fact-badges {
+      margin-top: 65px;
+      text-align: center;
+
+      h2 {
+        color: $orange;
+        font-family: $font-family-base-monserrat;
+        font-weight: 300;
+        font-size: 3.4rem;
+        // .badges-counter {
+        // }
+      }
+
+      .item::before {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 1px;
+        width: 100px;
+        border-bottom: 1px solid $color-22;
+      }
+    }
+  }
+  .team {
+    h4 {
+      font-weight: normal;
+      font-family: $font-family-base;
+    }
+
+    #quote-carousel {
+      margin-top: 50px;
+      color: #fff;
+      hr {
+        border-top: 1px solid #fff;
+      }
+
+      h6 {
+        color: #fff;
+      }
+      blockquote {
+        padding: 0;
+        text-align: center;
+        font-size: 1rem;
+        border: none;
+      }
+      p {
+        font-style: italic;
+        color: $white;
+        font-size: 1.067rem;
+        &:before,
+        &:after {
+          font-family: "FontAwesome";
+        }
+        &:before {
+          margin-right: 20px;
+          content: "\f10d";
+        }
+        &:after {
+          margin-left: 20px;
+          content: "\f10e";
+        }
+      }
+
+      h5 {
+        margin: 20px 0 10px;
+        font-size: 1.6rem;
+        font-weight: normal;
+        color: $orange;
+      }
+      h6 {
+        font-family: $font-family-base;
+        font-weight: 600;
+        margin: 0;
+        font-size: 16px;
+        text-transform: capitalize;
+      }
+      .img-fluid {
+        margin: 0 auto 25px;
+        border: 6px solid $color-bg-3;
+        background: $color-bg-3;
+      }
+      .carousel-indicators {
+        bottom: -40px;
+        li {
+          background-color: $white;
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          margin: 2px;
+          text-indent: -999px;
+          cursor: pointer;
+          border-radius: 50%;
+          opacity: 1;
+
+          &.active {
+            width: 12px;
+            height: 12px;
+            margin-top: 1px;
+            background-color: $orange;
+          }
+        }
+      }
+    }
+  }
+  .services {
+    h4 {
+      font-weight: normal;
+      font-family: $font-family-base;
+    }
+  }
+  .contactform {
+    color: $white;
+    background: url(../../img/hme_contacto.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 120%;
+    h4 {
+      font-weight: normal;
+      font-family: $font-family-base;
+    }
+    .section-overlay {
+      background-color: $color-21;
+      padding: 120px 0 160px 0;
+    }
+  }
+
+  .logos {
+    h4 {
+      font-weight: normal;
+      font-family: $font-family-base;
+    }
+
+    .container {
+      padding: 50px 0 0 0;
+    }
+  }
+
+  .footer {
+    padding: 40px 0;
+    background-color: #111;
+
+    .footer-content-1 {
+      text-align: left;
+    }
+
+    .footer-content-2 {
+      text-align: center;
+    }
+
+    .footer-content-3 {
+      text-align: right;
+
+      @media (min-width: $grid-breakpoints-xs) and (max-width: $grid-breakpoints-md) {
+        text-align: left;
+      }
+    }
+
+    .container {
+      padding: 50px 15px 15px !important;
+
+      img {
+        width: 100px;
+        margin-bottom: 15px;
+      }
+
+      p.title {
+        color: $orange;
+        font-family: $font-family-base-monserrat;
+        font-weight: 600;
+        font-size: 17px;
+      }
+    }
+
+    .footer a,
+    .footer p {
+      color: #fff;
+      padding-bottom: 10px;
+      text-transform: lowercase;
+    }
+
+    .social-icons {
+      padding-top: 15px;
+      ul {
+        li {
+          a {
+            width: 42px;
+            height: 42px;
+            line-height: 40px;
+
+            &:before {
+              font-size: 21px;
+            }
+          }
+        }
+      }
+    }
+
+    .options-list {
+      ul {
+        padding: 0;
+        list-style: none;
+        li {
+          @media (min-width: $grid-breakpoints-md) {
+            &::after {
+              content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+              color: $orange; /* Change the color */
+
+              display: inline-block; /* Needed to add space between the bullet and the text */
+              width: 2rem; /* Also needed for space (tweak if needed) */
+              margin-left: -1rem; /* Also needed for space (tweak if needed) */
+            }
+          }
+
+          @media (min-width: $grid-breakpoints-xs) and (max-width: $grid-breakpoints-md) {
+            &::before {
+              content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+              color: $orange; /* Change the color */
+
+              display: inline-block; /* Needed to add space between the bullet and the text */
+              width: 1rem; /* Also needed for space (tweak if needed) */
+              margin-left: 0; /* Also needed for space (tweak if needed) */
+            }
+          }
+
+          a {
+            font-weight: normal;
+            font-size: 14px;
+            color: $color-text-4;
+            margin-bottom: 0;
+            text-decoration: none;
+            &:hover,
+            &:visited {
+              color: $color-text-4;
+            }
+          }
+        }
+      }
+    }
+
+    .contact-list {
+      ul {
+        padding: 0;
+
+        li {
+          list-style: none;
+          font-size: 14px;
+          font-family: $font-family-base;
+          display: flex;
+          color: $orange;
+
+          span {
+            height: 32px;
+            display: inline-block;
+            line-height: 30px;
+            text-align: center;
+            margin-right: 10px;
+          }
+
+          p {
+            font-weight: normal;
+            font-size: 14px;
+            color: $color-text-4;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .sub-footer {
+      border-top: 1px solid $color-24;
+      -webkit-transform: skewY(2deg);
+      transform: skewY(2deg);
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      .container {
+        padding: 15px 15px 15px !important;
+        -webkit-transform: skewY(0deg);
+        transform: skewY(0deg);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+
+        span {
+          font-size: 13px;
+          color: $color-text-5;
+          label {
+            font-weight: 600;
+          }
+        }
+
+        a {
+          font-size: 13px;
+          color: $color-text-5;
+          font-weight: 600;
+        }
+        .f-item-2 {
+          text-align: right;
+          &::before {
+            content: "";
+            position: absolute;
+            right: 0px;
+            top: 0;
+            height: 23px;
+            width: 1px;
+            border-bottom: 15px solid $orange;
+          }
+        }
+
+        @media (min-width: $grid-breakpoints-xs) and (max-width: $grid-breakpoints-lg) {
+          .f-item-1,
+          .f-item-2,
+          .f-item-3 {
+            text-align: center;
+          }
+
+          .f-item-2 {
+            &::before {
+              border-bottom: 0px solid $orange;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-overlay {
+    background-color: $color-21;
+    padding: 110px 0;
+  }
+
+  .conocenos-header {
+    background: url(../../img/Int_Conocenos.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 120%;
+    color: $color-28;
+    .title-text {
+      font-size: 48px !important;
+      color: $white;
+      font-family: $font-family-base-monserrat;
+    }
+
+    label {
+      font-size: 15px;
+      color: $white;
+      font-family: $font-family-base-monserrat;
+    }
+  }
+
+  .conocenos {
+    .subtitle-text {
+      font-size: 30px !important;
+      color: $orange;
+      font-family: $font-family-base-monserrat;
+
+      
+    }
+
+    .line-border{
+      padding-bottom: 5px;
+      border-bottom: 1px solid  $color-bg-4;
+    }
+
+    p {
+      font-family: $font-family-base-monserrat;
+      color: $color-text-2;
+      font-size: 15px !important;
+    }
+
+    .img-conocenos {
+      background: url(../../img/img_acercade.jpg);
+     
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 75%;
+      width: 75%;
+      padding: 20px;
+    }
+  }
+}

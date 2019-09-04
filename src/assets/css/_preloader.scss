@@ -1,0 +1,89 @@
+#ak {
+  .preloader {
+    position: fixed;
+    left: 0;
+    top: -100%;
+    right: 0;
+    height: 100%;
+    z-index: 999999999999999999;
+    background: $white;
+    text-align: center;
+    overflow: hidden;
+    opacity: 1;
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    background-color: $color-bg-1;
+
+    &:before {
+      content: "";
+      height: 100%;
+      width: 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .logopreloader {
+      vertical-align: middle;
+      -webkit-transform: translate(0, 500px);
+      transform: translate(0, 500px);
+      position: relative;
+      white-space: nowrap;
+      display: inline-block;
+      top: -20px;
+      opacity: 0;
+      -webkit-transition: -moz-transform 1s ease, -webkit-transform 1s ease,
+        -ms-transform 1s ease, -o-transform 1s ease, transform 1s ease,
+        opacity 1s ease;
+      transition: -webkit-transform 1s ease, transform 1s ease, opacity 1s ease;
+    }
+
+    .loader {
+      width: 65px;
+      height: 65px;
+      background-size: cover;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin: 15px 0 0 -32px;
+      -webkit-transform: translate(0, 500px);
+      transform: translate(0, 500px);
+      opacity: 0;
+      -webkit-transition: opacity 1s ease 0.3s, -webkit-transform 1s ease 0.3s;
+      transition: opacity 1s ease 0.3s, -webkit-transform 1s ease 0.3s;
+      transition: transform 1s ease 0.3s, opacity 1s ease 0.3s;
+      transition: transform 1s ease 0.3s, opacity 1s ease 0.3s,
+        -webkit-transform 1s ease 0.3s;
+
+      background-image: url(../../img/preloader-ak.svg);
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    &.loading {
+      .loader,
+      .logopreloader {
+        -webkit-transform: translate(0, 0px);
+        transform: translate(0, 0px);
+        opacity: 1;
+      }
+    }
+
+    &.ended {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      opacity: 0;
+      -webkit-transition: -webkit-transform 1s ease 0.5s,
+        -moz-transform 1s ease 0.5s, -ms-transform 1s ease 0.5s,
+        -o-transform 1s ease 0.5s, transform 1s ease 0.5s, opacity 1s ease 0.5s;
+      transition: -webkit-transform 1s ease 0.5s, transform 1s ease 0.5s,
+        opacity 1s ease 0.5s;
+
+      .loader,
+      .logopreloader {
+        -webkit-transform: translate(0, -500px);
+        transform: translate(0, -500px);
+        opacity: 0;
+      }
+    }
+  }
+}
