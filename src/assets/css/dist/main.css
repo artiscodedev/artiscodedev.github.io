@@ -1931,6 +1931,11 @@ body.dark .header.header-fixed .logo a img.logo-dark {
   margin-bottom: 20px;
 }
 
+#ak .conocenos .img-fluid {
+  margin: 0 auto 25px;
+  background: #151515;
+}
+
 #ak .conocenos .line-border {
   padding-bottom: 5px;
   border-bottom: 1px solid #dddddd;
@@ -2039,6 +2044,15 @@ body.dark .header.header-fixed .logo a img.logo-dark {
   background: url(../../img/ftr_rs_in.svg);
   float: right;
   padding: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  #ak .conocenos-equipo .line-borderOrange {
+    border-left: none;
+  }
+  #ak .conocenos-equipo .text-padding {
+    padding-left: 0;
+  }
 }
 
 #ak .nuestrosservicios-header {
@@ -2189,6 +2203,12 @@ body.dark .header.header-fixed .logo a img.logo-dark {
   font-weight: bold;
   color: #000000;
   color: #000000;
+}
+
+@media only screen and (max-width: 992px) {
+  #ak .ayuda .paddin-bottom-lg {
+    padding-bottom: 30px;
+  }
 }
 
 #ak .nuestaExperiencia-header {

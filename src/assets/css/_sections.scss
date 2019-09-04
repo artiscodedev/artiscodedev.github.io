@@ -386,6 +386,12 @@
       margin-bottom: 20px;
     }
 
+    .img-fluid {
+      margin: 0 auto 25px;
+   
+      background: $color-bg-3;
+    }
+
     .line-border {
       padding-bottom: 5px;
       border-bottom: 1px solid $color-bg-4;
@@ -486,6 +492,8 @@
       height: 100%;
       width: 90%;
     }
+
+
     .line-borderOrange {
       border-left: 2px solid $orange;
     }
@@ -496,6 +504,16 @@
 
       padding: 20px;
     }
+
+    @media only screen and (max-width: $grid-breakpoints-lg) {
+      .line-borderOrange {
+        border-left: none;
+      }
+      .text-padding {
+        padding-left: 0;
+      }
+    }
+
   }
 
   .nuestrosservicios-header {
@@ -643,6 +661,14 @@
       color: $black;
       color: $black;
     }
+
+    @media only screen and (max-width: $grid-breakpoints-lg) {
+      .paddin-bottom-lg {
+        padding-bottom: 30px;
+      }
+     
+    }
+
   }
 
   .nuestaExperiencia-header {
