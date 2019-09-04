@@ -18,4 +18,7 @@ hr {
 body.dark .wrapper {
   background-color: $color-bg-1;
   overflow: hidden;
+  &.inter{
+    background-color: $white;
+  }
 }

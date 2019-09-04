@@ -15,9 +15,13 @@ body.dark .logos {
 }
 
 
-body.dark .conocenos {
+body.dark .conocenos,
+body.dark .nuestaExperiencia,
+body.dark .ayuda {
   background-color: #ffffff;
 }
+
+
 
 body.dark .services-box-item-cover,
 body.dark .services-box-item-content {
@@ -93,6 +97,9 @@ body.dark .footer {
 
 body.double-diagonal .services,
 body.double-diagonal .conocenos,
+body.double-diagonal .nuestaExperiencia,
+body.double-diagonal .ayuda,
+body.double-diagonal .interior,
 body.double-diagonal .testimonials,
 body.double-diagonal .pricing,
 body.double-diagonal .team,
@@ -167,6 +174,15 @@ body.double-diagonal .services .container {
 }
 
 body.double-diagonal .conocenos .container {
+  padding: 50px 15px 110px !important;
+}
+
+body.double-diagonal .nuestaExperiencia .container {
+  padding: 50px 15px 110px !important;
+}
+
+
+body.double-diagonal .ayuda .container {
   padding: 50px 15px 110px !important;
 }
 
@@ -257,8 +273,12 @@ body.double-diagonal .logos::before,
 body.double-diagonal .logos::after,
 body.double-diagonal .conocenos::before,
 body.double-diagonal .conocenos::after,
-body.double-diagonal .conocenos::before,
-body.double-diagonal .conocenos::after {
+body.double-diagonal .nuestaExperiencia::before,
+body.double-diagonal .nuestaExperiencia::after,
+body.double-diagonal .ayuda::before,
+body.double-diagonal .ayuda::after,
+body.double-diagonal .interior::before,
+body.double-diagonal .interior::after {
   top: 0;
   left: -25%;
   z-index: -1;
@@ -279,6 +299,9 @@ body.double-diagonal .shop-checkout::before,
 body.double-diagonal .project::before,
 body.double-diagonal .services::before,
 body.double-diagonal .conocenos::before,
+body.double-diagonal .nuestaExperiencia::before,
+body.double-diagonal .ayuda::before,
+body.double-diagonal .interior::before,
 body.double-diagonal .pricing::before,
 body.double-diagonal .portfolio::before,
 body.double-diagonal .team::before,
@@ -353,6 +376,9 @@ body.double-diagonal .contact .container:first-child {
 
 body.double-diagonal .services::before,
 body.double-diagonal .conocenos::before,
+body.double-diagonal .nuestaExperiencia::before,
+body.double-diagonal .ayuda::before,
+body.double-diagonal .interior::before,
 body.double-diagonal .team::before,
 body.double-diagonal .contactform::before,
 body.double-diagonal .logos::before  {

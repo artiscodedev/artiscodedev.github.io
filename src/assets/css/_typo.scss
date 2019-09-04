@@ -14,11 +14,18 @@ txt-slider {
   font-family: $font-family-base-monserrat;
   font-weight: 700;
   color: $white;
-  .orange {
+  &.orange {
     color: $orange;
   }
   span.orange {
     color: $orange;
+  }
+  &.black {
+    color: $black;
+  }
+  &.b-bot {
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-bg-4;
   }
 }
 
@@ -46,7 +53,20 @@ h4 {
 h5 {
   font-size: 1rem;
 }
+strong {
+  &.orange {
+    color: $orange;
+  }
+}
 
+a {
+  &.orange {
+    color: $orange;
+    &:visited {
+      color: $orange;
+    }
+  }
+}
 .txt-slider {
   font-size: 3.867rem;
 }

@@ -279,6 +279,13 @@
             font-size: 14px;
             color: $color-text-4;
             margin-bottom: 0;
+            a {
+              text-decoration: none;
+              color: $color-text-4;
+              &:visited {
+                color: $color-text-4;
+              }
+            }
           }
         }
       }
@@ -347,7 +354,7 @@
 
   .conocenos-header {
     background: url(../../img/Int_Conocenos.jpg);
-    background-attachment: fixed;
+    // background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 120%;
@@ -363,36 +370,347 @@
       color: $white;
       font-family: $font-family-base-monserrat;
     }
+
+    .section-overlay {
+      background-color: $color-21;
+      padding: 180px 0;
+    }
   }
 
   .conocenos {
+    padding-bottom: 0;
     .subtitle-text {
       font-size: 30px !important;
       color: $orange;
       font-family: $font-family-base-monserrat;
-
-      
+      margin-bottom: 20px;
     }
 
-    .line-border{
+    .line-border {
       padding-bottom: 5px;
-      border-bottom: 1px solid  $color-bg-4;
+      border-bottom: 1px solid $color-bg-4;
     }
 
     p {
-      font-family: $font-family-base-monserrat;
       color: $color-text-2;
       font-size: 15px !important;
     }
 
     .img-conocenos {
       background: url(../../img/img_acercade.jpg);
-     
+
       background-position: center;
       background-repeat: no-repeat;
       height: 75%;
       width: 75%;
       padding: 20px;
+    }
+
+    .img-box-side {
+      margin-top: 50px;
+      margin-right: 30px;
+      margin-bottom: 22px;
+      position: relative;
+      display: inline-block;
+
+      img {
+        position: relative;
+        display: inline-block;
+      }
+      &::before {
+        display: inline-block;
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        transform: translate3d(22px, -22px, -22px);
+        border: 2px solid $orange;
+      }
+    }
+
+    .subtitle-text-valores {
+      font-size: 20px !important;
+      color: $orange;
+      font-family: $font-family-base-monserrat;
+      margin-bottom: 10px;
+    }
+
+    .title-borderText {
+      padding-bottom: 30px;
+      border-bottom: 1px solid $color-bg-4;
+      margin-bottom: 30px;
+    }
+  }
+
+  .conocenos-equipo {
+    .img-headerEquipo {
+      background: url(../../img/Team.jpg);
+
+      height: 400px;
+      width: 100%;
+      padding: 20px 0 30px 0;
+      margin: 10px 0 20px 0;
+    }
+
+    .text-bold {
+      font-weight: bold;
+      color: $black;
+    }
+
+    .line-borderText {
+      padding-bottom: 30px;
+      border-bottom: 1px solid $color-bg-4;
+      margin-bottom: 30px;
+    }
+
+    .subtitle-textUser {
+      font-size: 30px !important;
+      color: $orange;
+      font-family: $font-family-base-monserrat;
+    }
+
+    .text-padding {
+      padding-left: 30px;
+    }
+
+    .img-user-zurita {
+      background: url(../../img/JL_Zurita.jpg);
+      height: 100%;
+      width: 90%;
+    }
+    .img-user-alvaez {
+      background: url(../../img/IV_Alvarez.jpg);
+      height: 100%;
+      width: 90%;
+    }
+    .line-borderOrange {
+      border-left: 2px solid $orange;
+    }
+
+    .user-icono {
+      background: url(../../img/ftr_rs_in.svg);
+      float: right;
+
+      padding: 20px;
+    }
+  }
+
+  .nuestrosservicios-header {
+    background: url(../../img/Int_Servicios.jpg);
+    // background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 120%;
+    color: $color-28;
+    .title-text {
+      font-size: 48px !important;
+      color: $white;
+      font-family: $font-family-base-monserrat;
+    }
+
+    label {
+      font-size: 15px;
+      color: $white;
+      font-family: $font-family-base-monserrat;
+    }
+
+    .section-overlay {
+      background-color: $color-21;
+      padding: 180px 0;
+    }
+  }
+
+  .ctm-list {
+    padding-left: 20px;
+    list-style: none;
+    li::before {
+      content: "\2022";
+      color: $orange;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+  }
+
+  .ayuda-header {
+    background: url(../../img/Int_Ayuda.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 120%;
+    color: $color-28;
+    .title-text {
+      font-size: 48px !important;
+      color: $white;
+      font-family: $font-family-base-monserrat;
+    }
+
+    label {
+      font-size: 15px;
+      color: $white;
+      font-family: $font-family-base-monserrat;
+    }
+
+    .section-overlay {
+      background-color: $color-21;
+      padding: 180px 0;
+    }
+  }
+  .ayuda {
+    padding-bottom: 0;
+
+    .fa-accordion-custom {
+      float: left;
+
+      position: absolute;
+    }
+
+    .text-color {
+      font-size: 15px;
+      font-family: $font-family-base-monserrat;
+      padding-left: 20px;
+      color: $black;
+    }
+
+    .panel {
+      padding: 5px 15px 5px 15px;
+      border: 1px solid $color-bg-2;
+    }
+
+    p {
+      padding: 5px 15px 5px 15px;
+    }
+
+    .accordion-bosque .fa-accordion-custom::before {
+      color: $orange;
+      content: "\f107";
+    }
+
+    .accordion-bosque.collapsed .fa-accordion-custom::before {
+      color: $black;
+      content: "\f106";
+    }
+
+    .fa-2x {
+      font-size: 1.5em;
+    }
+
+    .img-ayuda {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background-repeat: no-repeat;
+      height: 167px;
+      width: 193px;
+    }
+
+    h3 {
+      padding-top: 10px;
+      color: $black;
+    }
+    .line-border {
+      padding-bottom: 5px;
+      border-bottom: 1px solid $color-bg-4;
+    }
+
+    .list-format {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .icon-list {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background-repeat: no-repeat;
+      float: left;
+      position: absolute;
+      height: 18px;
+      width: 18px;
+      margin-top: 8px;
+    }
+
+    .text-padding {
+      padding-left: 30px;
+    }
+
+    li label {
+      font-weight: bold;
+      color: $black;
+      color: $black;
+    }
+  }
+
+  .nuestaExperiencia-header {
+    background: url(../../img/Int_NuestraExperiencia.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 120%;
+    color: $color-28;
+    .title-text {
+      font-size: 48px !important;
+      color: $white;
+      font-family: $font-family-base-monserrat;
+    }
+
+    label {
+      font-size: 15px;
+      color: $white;
+      font-family: $font-family-base-monserrat;
+    }
+
+    .section-overlay {
+      background-color: $color-21;
+      padding: 180px 0;
+    }
+  }
+
+  .nuestaExperiencia {
+    padding-bottom: 0;
+
+    h3 {
+      padding-top: 10px;
+      color: $black;
+    }
+    .line-border {
+      padding-bottom: 5px;
+      border-bottom: 1px solid $color-bg-4;
+    }
+
+    .text-bold {
+      font-weight: bold;
+      color: $black;
+    }
+
+    .line-borderText {
+      padding-bottom: 30px;
+      border-bottom: 1px solid $color-bg-4;
+      margin-bottom: 30px;
+    }
+
+    .subtitle-textUser {
+      font-size: 30px !important;
+      color: $orange;
+      font-family: $font-family-base-monserrat;
+    }
+
+    .text-padding {
+      padding-left: 20px;
+    }
+
+    .text-bottom {
+      padding-bottom: 25px;
+    }
+
+    .img-clientes {
+      margin-top: 20px;
+      margin-right: 40px;
+      height: 250px;
+      width: 90%;
     }
   }
 }
