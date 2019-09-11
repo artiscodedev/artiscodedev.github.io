@@ -1327,7 +1327,7 @@ body.dark .header.header-fixed .logo a img.logo-dark {
     color: #fff;
   }
   .dropdown-menu {
-    position: absolute;
+    position: relative;
     top: 100%;
     left: 0;
     z-index: 1000;
@@ -1994,6 +1994,16 @@ body.dark .header.header-fixed .logo a img.logo-dark {
   margin-bottom: 30px;
 }
 
+#ak .conocenos .text-aviso {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 992px) {
+  #ak .conocenos .text-aviso {
+    text-align: left;
+  }
+}
+
 #ak .conocenos-equipo .img-headerEquipo {
   background: url(../../img/Team.jpg);
   height: 400px;
@@ -2127,6 +2137,11 @@ body.dark .header.header-fixed .logo a img.logo-dark {
   position: absolute;
 }
 
+#ak .ayuda strong {
+  font-weight: bold;
+  color: #000000;
+}
+
 #ak .ayuda .text-color {
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
@@ -2140,7 +2155,7 @@ body.dark .header.header-fixed .logo a img.logo-dark {
 }
 
 #ak .ayuda p {
-  padding: 5px 15px 5px 15px;
+  padding: 0px 15px 1px 15px;
 }
 
 #ak .ayuda .accordion-bosque .fa-accordion-custom::before {
@@ -2200,7 +2215,6 @@ body.dark .header.header-fixed .logo a img.logo-dark {
 
 #ak .ayuda li label {
   font-weight: bold;
-  color: #000000;
   color: #000000;
 }
 
@@ -2281,6 +2295,39 @@ body.dark .header.header-fixed .logo a img.logo-dark {
   width: 90%;
 }
 
+#ak .sitemap-wrapper ul {
+  list-style: none;
+}
+
+#ak .sitemap-wrapper ul li {
+  padding-bottom: 5px;
+}
+
+#ak .sitemap-wrapper ul li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ff8a00;
+  /* Change the color */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1rem;
+  /* Also needed for space (tweak if needed) */
+  margin-left: 0;
+  /* Also needed for space (tweak if needed) */
+}
+
+#ak .sitemap-wrapper ul li a {
+  font-weight: normal;
+  font-size: 20px;
+  color: #939598;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+#ak .sitemap-wrapper ul li a:hover, #ak .sitemap-wrapper ul li a:visited {
+  color: #939598;
+}
+
 .card.card-services {
   background-color: #242424;
   border-radius: 0px;
@@ -2315,5 +2362,25 @@ body.dark .header.header-fixed .logo a img.logo-dark {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.carousel .carousel-control-prev {
+  left: -130px;
+}
+
+@media (min-width: 0) and (max-width: 1200px) {
+  .carousel .carousel-control-prev {
+    display: none;
+  }
+}
+
+.carousel .carousel-control-next {
+  right: -130px;
+}
+
+@media (min-width: 0) and (max-width: 1200px) {
+  .carousel .carousel-control-next {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -34,3 +34,19 @@
   display: -ms-flexbox;
   display: flex;
 }
+
+.carousel {
+  .carousel-control-prev {
+    left: -130px; //or you can increase this
+    @media (min-width: $grid-breakpoints-xs) and (max-width: $grid-breakpoints-xl) {
+      display: none;
+    }
+  }
+
+  .carousel-control-next {
+    right: -130px; //or you can increase this
+    @media (min-width: $grid-breakpoints-xs) and (max-width: $grid-breakpoints-xl) {
+      display: none;
+    }
+  }
+}

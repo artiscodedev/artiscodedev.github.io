@@ -6,7 +6,7 @@ class ctmPreloader {
     setTimeout(() => { // se rremueve para tomar la carga natural del html
       $preloader.addClass("loading");
       $preloader.addClass("ended");
-    }, 1000);
+    }, 900);
 
     // $loader.onCSSTransitionEnd(function() {
     //   $preloader.addClass("ended");

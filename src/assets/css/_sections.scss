@@ -388,7 +388,6 @@
 
     .img-fluid {
       margin: 0 auto 25px;
-  
     }
 
     .line-border {
@@ -448,6 +447,16 @@
       border-bottom: 1px solid $color-bg-4;
       margin-bottom: 30px;
     }
+
+    .text-aviso {
+      text-align: justify;
+    }
+
+    @media only screen and (max-width: $grid-breakpoints-lg) {
+      .text-aviso {
+        text-align: left;
+      }
+    }
   }
 
   .conocenos-equipo {
@@ -492,7 +501,6 @@
       width: 90%;
     }
 
-
     .line-borderOrange {
       border-left: 2px solid $orange;
     }
@@ -512,7 +520,6 @@
         padding-left: 0;
       }
     }
-
   }
 
   .nuestrosservicios-header {
@@ -585,6 +592,11 @@
       position: absolute;
     }
 
+    strong {
+      font-weight: bold;
+      color: $black;
+    }
+
     .text-color {
       font-size: 15px;
       font-family: $font-family-base-monserrat;
@@ -598,7 +610,7 @@
     }
 
     p {
-      padding: 5px 15px 5px 15px;
+      padding: 0px 15px 1px 15px;
     }
 
     .accordion-bosque .fa-accordion-custom::before {
@@ -658,16 +670,13 @@
     li label {
       font-weight: bold;
       color: $black;
-      color: $black;
     }
 
     @media only screen and (max-width: $grid-breakpoints-lg) {
       .paddin-bottom-lg {
         padding-bottom: 30px;
       }
-     
     }
-
   }
 
   .nuestaExperiencia-header {
@@ -736,6 +745,38 @@
       margin-right: 40px;
       height: 250px;
       width: 90%;
+    }
+  }
+
+  .sitemap-wrapper {
+    ul {
+      // padding: 0;
+      list-style: none;
+      li {
+        padding-bottom: 5px;
+        &::before {
+          content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+          color: $orange; /* Change the color */
+
+          display: inline-block; /* Needed to add space between the bullet and the text */
+          width: 1rem; /* Also needed for space (tweak if needed) */
+          margin-left: 0; /* Also needed for space (tweak if needed) */
+
+         
+        }
+
+        a {
+          font-weight: normal;
+          font-size: 20px;
+          color: $color-text-4;
+          margin-bottom: 0;
+          text-decoration: none;
+          &:hover,
+          &:visited {
+            color: $color-text-4;
+          }
+        }
+      }
     }
   }
 }
