@@ -1688,6 +1688,12 @@ body.dark .header.header-fixed .logo a img.logo-dark {
   padding: 120px 0 160px 0;
 }
 
+@media only screen and (max-width: 992px) {
+  #ak .contactform .centet-lg {
+    text-align: center;
+  }
+}
+
 #ak .logos h4 {
   font-weight: normal;
   font-family: "Open Sans", sans-serif;
@@ -2176,6 +2182,10 @@ body.dark .header.header-fixed .logo a img.logo-dark {
 #ak .ayuda .accordion-bosque.collapsed .fa-accordion-custom::before {
   color: #000000;
   content: "\f106";
+}
+
+#ak .ayuda .accordion-bosque:not(.collapsed) label {
+  color: #ff8a00;
 }
 
 #ak .ayuda .fa-2x {
