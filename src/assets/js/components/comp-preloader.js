@@ -7,10 +7,5 @@ class ctmPreloader {
       $preloader.addClass("loading");
       $preloader.addClass("ended");
     }, 900);
-
-    // $loader.onCSSTransitionEnd(function() {
-    //   $preloader.addClass("ended");
-    //   console.log("preloader ended");
-    // });
   }
 }

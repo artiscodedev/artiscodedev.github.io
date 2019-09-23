@@ -1,3 +1,34 @@
+class compEmpresas {
+  constructor() {
+    let $bxSlider = $("#bxslider");
+    $bxSlider.bxSlider({
+      minSlides: 1,
+      maxSlides: 6,
+      slideWidth: 200,
+      slideMargin: 30,
+      ticker: true,
+      speed: 30000
+    });
+  }
+}
+
+
+class ctmPreloader {
+  constructor() {
+    let $preloader = $("#preloader"),
+      $loader = $("#preloader #loader");
+
+    setTimeout(() => { // se rremueve para tomar la carga natural del html
+      $preloader.addClass("loading");
+      $preloader.addClass("ended");
+    }, 900);
+  }
+}
+
+
+
+
+
 (function($) {
   "use strict";
   $(window).on({
@@ -193,3 +224,11 @@
   })();
 
   // <!--End of Tawk.to Script-->
+
+  // recaptcha
+// var akCaptcha;
+//   var onloadCallbackCaptcha = function() {
+//     akCaptcha =  grecaptcha.render('html_element', {
+//       'sitekey' : '6Lej9bgUAAAAAP6_xMimpbwdoDMclcBF4ZAAmXOR'
+//     });
+//   };

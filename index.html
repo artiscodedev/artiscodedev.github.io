@@ -622,16 +622,16 @@
                     <div class="card-body">
                       <div class="row">
                         <div class="col-md-12 px-4">
-                          <form>
+                          <form action="contact.php" method="post">
                             <div class="group">
-                              <input type="text" required="required" /><span
+                              <input type="text" required="required" id="name" name="name" /><span
                                 class="highlight"
                               ></span
                               ><span class="bar"></span>
                               <label>Su nombre</label>
                             </div>
                             <div class="group">
-                              <input type="text" required="required" /><span
+                              <input type="tel" required="required" id="tel" name="tel"  /><span
                                 class="highlight"
                               ></span
                               ><span class="bar"></span>
@@ -639,7 +639,7 @@
                             </div>
 
                             <div class="group">
-                              <input type="text" required="required" /><span
+                              <input type="email" required="required" id="email" name="email"  /><span
                                 class="highlight"
                               ></span
                               ><span class="bar"></span>
@@ -650,13 +650,25 @@
                                 type="textarea"
                                 rows="3"
                                 required="required"
+                                id="message" name="message" 
                               ></textarea
                               ><span class="highlight"></span
                               ><span class="bar"></span>
                               <label>Mensaje</label>
                             </div>
+                            <div class="group">
+                              <div class="g-recaptcha" data-sitekey="6Lej9bgUAAAAAP6_xMimpbwdoDMclcBF4ZAAmXOR"></div>
+                              <br>
+                              <div class="alert alert-danger alert-dismissible fade show d-none" role="alert" id="alert-captcha">
+                                Captcha es requerido.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                            </div>
                             <div class="btn-box text-right">
                               <button
+                              id="send-button"
                                 class="btn btn-submit custom-button"
                                 type="submit"
                               >
@@ -953,11 +965,19 @@
       type="text/javascript"
       src="/src/assets/plugins/revolution/js/extensions/revolution.extension.video.min.js"
     ></script>
-    <script src="/src/assets/js/components/comp-preloader.js"></script>
-    <script src="/src/assets/js/components/comp-empresas.js"></script>
-    <script src="/src/assets/js/main.js"></script>
 
 
+    <script src="/src/assets/js/main.min.js"></script>
+
+ 
+
+
+<script src="https://www.google.com/recaptcha/api.js" async defer>
+</script>
+
+<!-- <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallbackCaptcha&render=explicit"
+async defer>
+</script> -->
    
   </body>
 </html>
